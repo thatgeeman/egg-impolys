@@ -1,12 +1,11 @@
-% IMPolyS template for Science Days
-% Directed at students in Strasbourg
+% IMPolyS template for Science Days (full article) -- directed at students in Strasbourg
 % Contribute here: https://github.com/thatgeeman/egg-impolys.git
 %
 % ================================================================
-% Based on MS Word template by Dr Vincent Le Houerou (HDR, ICS)
+% Based on MS Word template by Dr Vincent Le Houerou (ICS)
 %
-% LaTeX author(s): Geevarghese George (Intern); Dr Arghya Dutta (Post-Doc, ICS)
-% Linux systems: Revtex4 (compiled with texlive-publishers package)
+% LaTeX author(s): thatgeeman (git)
+% Linux systems: Revtex4-1 (compiled with texlive-publishers package)
 % For other systems https://journals.aps.org/revtex
 % ================================================================
 %
@@ -32,23 +31,107 @@
 % CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 % ================================================================
 
-\documentclass[pre,aps,twocolumn,superscriptaddress]{revtex4-1}
+\documentclass[aps,pra,twocolumn,twoside,superscriptaddress]{revtex4-1}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
+\graphicspath{ {images_template/} }
 \usepackage{color}
+\usepackage[english]{babel}
 \usepackage{blindtext} % Package to generate dummy text throughout this template 
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+%\usepackage{showframe}
+\usepackage[margin=20mm,top=1in]{geometry} % can set margin
+\setlength{\columnsep}{10mm} % for column separation
 % \usepackage{hyperref} % For hyperlinks in the PDF
 
-\begin{document}
-\title{Computer simulation of polymer models in bulk and in confinement}
+\fancypagestyle{frontmatter}{%
+%\voffset = 1mm
+\headheight = 30pt
+\headsep = 25pt
+\fancyhead{} % clear all fields
+\fancyfoot{}  % clear all fields
+\fancyhead[C]{\textit{International Master on Polymer Science -- Annual Journal\\
+Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(-285,-10){\line(1,0){505}} 
+\end{picture}
+} % OR
+%\renewcommand{\headrulewidth}{0.4pt}
+% logos for header
+\lhead{\begin{picture}(0,0) 
+\put(0,0){\includegraphics[scale=0.2]{uni-stra-logo}}
+\put(60,-7){\includegraphics[scale=0.11]{uni-frei-logo}}
+\put(460,0){\includegraphics[scale=0.2]{impolys-logo}}
+\end{picture}}
 
-\author{Geevarghese \surname{George}}
-\email[Corresponding author: ]{ggeorge@etu.unistra.fr}
-\affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
-23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
-\author{Hendrik \surname{Meyer}}
-\affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
-23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
+%\renewcommand{\footrulewidth}{0.4pt} % no footer rule
+} % end of frontmatter
+
+\fancypagestyle{othermatter}{%
+\fancyhf{} % remove everything
+\renewcommand{\headrulewidth}{-2pt} % remove lines as well
+\renewcommand{\footrulewidth}{-2pt}
+\headheight = 12pt
+\headsep = 12pt
+\fancyhead{} % clear all fields
+\fancyfoot{}  % clear all fields
+\fancyhead[CE]{
+\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(5,-6){\line(0,1){20}} 
+\end{picture}
+} % end of center even fancyhead
+\fancyhead[CO]{
+\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(-397,-6){\line(0,1){20}} 
+\end{picture}
+} % end of center odd fancyhead
+\fancyhead[LE,RO]{\thepage}
+% print page and logo as well
+% even cases
+\fancyhead[RE]{
+\begin{picture}(0,0) 
+\put(-45,-3){\includegraphics[scale=0.12]{impolys-logo2}}
+\end{picture}}
+% oddcases
+\fancyhead[LO]{
+\begin{picture}(0,0) 
+\put(18,-3){\includegraphics[scale=0.12]{impolys-logo2}}
+\end{picture}}
+} % end of othermatter
+
+\pagestyle{othermatter} % default
+
+% optional footer 
+% \fancyfoot[LO,CE]{}
+
+
+% move section headings to left and decimal numbering
+\titleformat{\section}{\raggedright\bfseries}{\arabic{section}.}{1em}{}
+\titleformat{\subsection}{\raggedright\bfseries\textit}{\arabic{section}.\arabic{subsection}.}{1em}{}
+\titleformat{\subsubsection}{\raggedright\bfseries\textit}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}{1em}{}
+
+% fix references
+\makeatletter
+\renewcommand{\p@subsection}{}
+\renewcommand{\p@subsubsection}{}
+\makeatother
+
+\begin{document}
+
+\title{Computer simulation of polymer models in bulk and in confinement}
+\author{Geevarghese \surname{George}$\dagger$}
+%\email[Corresponding author: ]{ggeorge@etu.unistra.fr} % email at bottom of page
+% \affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
+% 23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
+% not the smartest way to do this
+\author{Hendrik \surname{Meyer}\vspace*{3.5mm}}
+\affiliation{\textnormal{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS),
+23 rue du Loess, 67034 STRASBOURG Cedex 2, France \\ 
+\vspace{3.5mm}
+$\dagger$Corresponding author: ggeorge@etu.unistra.fr}}
 
 % affiliation after author name, auto checks for duplicate
 % \author{} % to add more authors
@@ -77,24 +160,51 @@
 % \end{abstract}
 % ===============
 
+%\keywords{polymer simulation, LAMMPS, thin films} %use showkeys in document class if needed in output
+
 \maketitle
-%\tableofcontents % not needed in article
-\section{Introduction}
-\pagestyle{empty} % avoid page numbers
-\blindtext
-\blindtext
-\blindtext
+
+%\tableofcontents % not needed 
+
+\section{Introduction} \label{sec:intro}
+\thispagestyle{frontmatter} % avoid page number in first page
 \blindtext
 \blindtext
 \blindtext\blindtext
+\blindtext
+\blindtext
+\blindtext
+\subsection{Subsection} \label{sec:tead}
 \blindtext\blindtext
 \blindtext
-
-
-
-
-
-
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\subsubsection{Subsubsection} \label{sec:teww}\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
+\subsubsection{Subsubsection} \label{sec:te}\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
 
 \end{document}
 

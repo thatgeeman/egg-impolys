@@ -1,11 +1,11 @@
-% IMPolyS template for Science Days
-% Directed at students in Strasbourg
+% IMPolyS template for Science Days (full article) -- directed at students in Strasbourg
+% Contribute here: https://github.com/thatgeeman/egg-impolys.git
 %
 % ================================================================
-% Based on MS Word template by Dr Vincent Le Houerou (HDR, ICS)
+% Based on MS Word template by Dr Vincent Le Houerou (ICS)
 %
-% LaTeX author(s): Geevarghese George (Intern); Dr Arghya Dutta (Post-Doc, ICS)
-% Linux systems: Revtex4 (compiled with texlive-publishers package)
+% LaTeX author(s): thatgeeman (git)
+% Linux systems: Revtex4-1 (compiled with texlive-publishers package)
 % For other systems https://journals.aps.org/revtex
 % ================================================================
 %
@@ -31,23 +31,92 @@
 % CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 % ================================================================
 
-\documentclass[pre,aps,twocolumn,superscriptaddress]{revtex4-1}
+\documentclass[aps,pra,twocolumn,twoside,superscriptaddress]{revtex4-1}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
+\graphicspath{ {images_template/} }
 \usepackage{color}
-\usepackage{blindtext}
+\usepackage[english]{babel}
 \usepackage{blindtext} % Package to generate dummy text throughout this template 
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+%\usepackage{showframe}
+\usepackage[margin=20mm,top=1in]{geometry} % can set margin
+\setlength{\columnsep}{10mm} % for column separation
+% \usepackage{hyperref} % For hyperlinks in the PDF
+
+\fancypagestyle{frontmatter}{%
+% header
+%\voffset = 1mm
+\headheight = 30pt
+\headsep = 20pt
+\fancyhead{} % clear all fields
+\fancyfoot{}  % clear all fields
+\fancyhead[C]{\textit{International Master on Polymer Science -- Annual Journal\\
+Vol. 2 (2017)}}
+% logos for header
+\lhead{\begin{picture}(0,0) 
+\put(0,0){\includegraphics[scale=0.2]{uni-stra-logo}}
+\put(60,-7){\includegraphics[scale=0.11]{uni-frei-logo}}
+\put(460,0){\includegraphics[scale=0.2]{impolys-logo}}
+\end{picture}}
+}
+
+\fancypagestyle{othermatter}{%
+\headheight = 12pt
+\headsep = 12pt
+\fancyhead{} % clear all fields
+\fancyfoot{}  % clear all fields
+\fancyhead[C]{\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}}
+\fancyhead[LE,RO]{ \thepage}
+% print page and logo as well
+% even cases
+\fancyhead[RE]{
+\begin{picture}(0,0) 
+\put(-20,0){\includegraphics[scale=0.12]{impolys-logo2}}
+\end{picture}
+%vertical line
+\put(-40,0){\line(0,1){20}}
+}
+% oddcases
+\fancyhead[LO]{
+\begin{picture}(0,0) 
+\put(0,0){\includegraphics[scale=0.12]{impolys-logo2}}
+\end{picture}
+% vertical line
+}
+}
+
+\pagestyle{othermatter} % default
+% optional footer 
+% \fancyfoot[LO,CE]{From: G. George}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% move section headings to left and decimal numbering
+\titleformat{\section}{\raggedright\bfseries}{\arabic{section}.}{1em}{}
+\titleformat{\subsection}{\raggedright\bfseries\textit}{\arabic{section}.\arabic{subsection}.}{1em}{}
+\titleformat{\subsubsection}{\raggedright\bfseries\textit}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}{1em}{}
+
+% fix references
+\makeatletter
+\renewcommand{\p@subsection}{}
+\renewcommand{\p@subsubsection}{}
+\makeatother
+
 \begin{document}
+
 \title{Computer simulation of polymer models in bulk and in confinement}
-
-\author{Geevarghese \surname{George}}
-\email[Corresponding author: ]{ggeorge@etu.unistra.fr}
-\affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
-23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
-
-\author{Hendrik \surname{Meyer}}
-\affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
-23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
+\author{Geevarghese \surname{George}$\dagger$}
+%\email[Corresponding author: ]{ggeorge@etu.unistra.fr} % email at bottom of page
+% \affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
+% 23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
+% not the smartest way to do this
+\author{Hendrik \surname{Meyer}\vspace*{3.5mm}}
+\affiliation{\textnormal{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS),
+23 rue du Loess, 67034 STRASBOURG Cedex 2, France \\ 
+\vspace{3.5mm}
+$\dagger$Corresponding author: ggeorge@etu.unistra.fr}}
 
 % affiliation after author name, auto checks for duplicate
 % \author{} % to add more authors
@@ -57,6 +126,15 @@
 % to break down abstract into relevant points use item : not necessary (Phys. Rev. C requires this format)
 % ===============
 % \begin{abstract}
+%
+% \noindent Previous study of polymer melt using molecular dynamics simulation showed standard results.
+% The study suggested that confinement does not alter the static properties significantly for the chosen 
+% chain length and the dynamic quantities is what is being modified. In this study, layered analysis 
+% approach was utilized, which enabled us to look closer into the interface between melt and the wall.
+% *more from conclusion*
+%
+% OR
+%
 % \begin{description}
 %  \item[Background]
 %  \item[Purpose]
@@ -67,72 +145,63 @@
 % \end{abstract}
 % ===============
 
+%\keywords{polymer simulation, LAMMPS, thin films} %use showkeys in document class if needed in output
+
 \maketitle
+
+%\tableofcontents % not needed 
+
+\section{Introduction} \label{sec:intro}
+\thispagestyle{frontmatter} % avoid page number in first page
+\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
+\blindtext
+%\subsection{Subsection} \label{sec:tead}
+\blindtext\blindtext
+\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+%\subsubsection{Subsubsection} \label{sec:teww}\blindtext
+
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
+%\subsubsection{Subsubsection} \label{sec:te}\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext\blindtext
+\blindtext
+\blindtext
+
+
+
+
 \end{document}
 
-
-% \usepackage[sc]{mathpazo} % Use the Palatino font
-% \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-% \linespread{1.05} % Line spacing - Palatino needs more space between lines
-% \usepackage{microtype} % Slightly tweak font spacing for aesthetics
-% \usepackage[english]{babel} % Language hyphenation and typographical rules
-% \usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
-% \usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
-% \usepackage{booktabs} % Horizontal rules in tables
-% \usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
-% \usepackage{enumitem} % Customized lists
-% \setlist[itemize]{noitemsep} % Make itemize lists more compact
-% \usepackage{abstract} % Allows abstract customization
-% \renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
-% \renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
-% 
-% \usepackage{titlesec} % Allows customization of titles
-% \renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
-% \renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
-% \titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
-% \titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
-% 
-% \usepackage{fancyhdr} % Headers and footers
-% \pagestyle{fancy} % All pages have headers and footers
-% \fancyhead{} % Blank out the default header
-% \fancyfoot{} % Blank out the default footer
-% \fancyhead[C]{Running title $\bullet$ May 2016 $\bullet$ Vol. XXI, No. 1} % Custom header text
-% % \fancyfoot[RO,LE]{\thepage} % Custom footer text
-% 
-% \usepackage{titling} % Customizing the title section
-% 
-% \usepackage{hyperref} % For hyperlinks in the PDF
-% 
-% % title
-% \setlength{\droptitle}{-4\baselineskip} % Move the title up
-% 
-% \pretitle{\begin{center}\Huge\bfseries} % Article title formatting
-% % \posttitle{\end{center}} % Article title closing formatting
-% \title{Computer simulation of polymer models in bulk and confinement} % Article title
-% \author{%
-% \textsc{H. Meyer $\dagger$, G. George $\dagger$\thanks{Corresponding author: 
-% \href{mailto:ggeorge@etu.unistra.fr}{ggeorge@etu.unistra.fr}}}\\[1ex] 
-% $\dagger$ \normalsize Institut Charles Sadron, UPR22 CNRS, 23 rue du Loess, 67034 Strasbourg Cedex 2, France  \\ 
-% }
-% \begin{abstract}
-% \noindent Previous study of polymer melt using molecular dynamics simulation showed standard results.
-% The study suggested that confinement does not alter the static properties significantly for the chosen 
-% chain length and the dynamic quantities is what is being modified. In this study, layered analysis 
-% approach was utilized, which enabled us to look closer into the interface between melt and the wall.
-% *more from conclusion*
-% \end{abstract}
-% 
-% %----------------------------------------------------------------------------------------
-% 
-% \begin{document}
-% 
-% % Print the title
-% \maketitle
 % %----------------------------------------------------------------------------------------
 % %	ARTICLE CONTENTS
 % %----------------------------------------------------------------------------------------
 % % 
-% \section{Introduction}
+% 
 % 
 % \lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
 % \blindtext % Dummy text

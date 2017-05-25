@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.23)  24 MAY 2017 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.23)  25 MAY 2017 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,8 +71,8 @@ File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 )
-Class revtex4-1 Info: Selecting journal pre on input line 7544.
-Class revtex4-1 Info: APS journal PRE selected on input line 7545.
+Class revtex4-1 Info: Selecting journal pra on input line 7544.
+Class revtex4-1 Info: APS journal PRA selected on input line 7545.
 
 
 Class revtex4-1 Warning: No type size specified, using default 10.
@@ -215,66 +215,131 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/01/24 v3.3q English support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count108
+\U@D=\dimen113
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
 (/usr/share/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
 (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count108
-\c@Blindtext=\count109
-\c@blind@countparstart=\count110
-\blind@countxx=\count111
-\blindtext@numBlindtext=\count112
-\blind@countyy=\count113
-\c@blindlist=\count114
-\c@blindlistlevel=\count115
-\c@blindlist@level=\count116
-\blind@listitem=\count117
-\c@blind@listcount=\count118
-\c@blind@levelcount=\count119
-\blind@mathformula=\count120
-\blind@Mathformula=\count121
-\c@blind@randomcount=\count122
-\c@blind@randommax=\count123
-\c@blind@pangramcount=\count124
-\c@blind@pangrammax=\count125
+\c@blindtext=\count109
+\c@Blindtext=\count110
+\c@blind@countparstart=\count111
+\blind@countxx=\count112
+\blindtext@numBlindtext=\count113
+\blind@countyy=\count114
+\c@blindlist=\count115
+\c@blindlistlevel=\count116
+\c@blindlist@level=\count117
+\blind@listitem=\count118
+\c@blind@listcount=\count119
+\c@blind@levelcount=\count120
+\blind@mathformula=\count121
+\blind@Mathformula=\count122
+\c@blind@randomcount=\count123
+\c@blind@randommax=\count124
+\c@blind@pangramcount=\count125
+\c@blind@pangrammax=\count126
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 41.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 41.
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box43
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
+\ttl@plus=\dimen114
+\ttl@minus=\dimen115
+\ttl@toksa=\toks22
+\titlewidth=\dimen116
+\titlewidthlast=\dimen117
+\titlewidthfirst=\dimen118
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 41.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 41.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 41.
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count127
+\Gm@cntv=\count128
+\c@Gm@tempcnt=\count129
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks23
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 122.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 122
+.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 122.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 122.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 122.
  (./article_2.aux)
 \openout1 = `article_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen113
-\scratchbox=\box43
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen114
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count130
+\scratchdimen=\dimen127
+\scratchbox=\box44
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen128
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -282,9 +347,6 @@ Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -324,39 +386,161 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* v-part:(T,H,B)=(72.26999pt, 665.7945pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=500.484pt
+* \textheight=665.7945pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-41.0pt
+* \headheight=12.0pt
+* \headsep=12.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=107.0pt
+* \marginparsep=6.0pt
+* \columnsep=28.45274pt
+* \skip\footins=39.0pt plus 4.0pt minus 12.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 \openout3 = `article_2Notes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
-
+LaTeX Font Info:    Try loading font information for U+msa on input line 165.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 165.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./article_2.bbl) [2] 
-(./article_2.aux) ) 
+)
+
+! Package titlesec Error: Entered in horizontal mode.
+
+See the titlesec package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \subsection{Subsection}
+                              \label{sec:tead}
+The <format> argument cannot contain horizontal material
+such as text, \noindent, \makebox, etc.
+
+<images_template/uni-stra-logo.png, id=1, 222.8325pt x 100.375pt>
+File: images_template/uni-stra-logo.png Graphic file (type png)
+
+<use images_template/uni-stra-logo.png>
+Package pdftex.def Info: images_template/uni-stra-logo.png used on input line 1
+86.
+(pdftex.def)             Requested size: 44.5657pt x 20.07463pt.
+
+<images_template/uni-frei-logo.png, id=3, 351.3125pt x 351.3125pt>
+File: images_template/uni-frei-logo.png Graphic file (type png)
+
+<use images_template/uni-frei-logo.png>
+Package pdftex.def Info: images_template/uni-frei-logo.png used on input line 1
+86.
+(pdftex.def)             Requested size: 38.64449pt x 38.64449pt.
+
+<images_template/impolys-logo.png, id=4, 160.6pt x 147.55125pt>
+File: images_template/impolys-logo.png Graphic file (type png)
+
+<use images_template/impolys-logo.png>
+Package pdftex.def Info: images_template/impolys-logo.png used on input line 18
+6.
+(pdftex.def)             Requested size: 32.11942pt x 29.50972pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images_template/uni-s
+tra-logo.png> <./images_template/uni-frei-logo.png> <./images_template/impolys-
+logo.png>]
+
+! Package titlesec Error: Entered in horizontal mode.
+
+See the titlesec package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 \subsubsection{Subsubsection}
+                                    \label{sec:teww}\blindtext
+The <format> argument cannot contain horizontal material
+such as text, \noindent, \makebox, etc.
+
+<images_template/impolys-logo2.png, id=23, 160.6pt x 147.55125pt>
+File: images_template/impolys-logo2.png Graphic file (type png)
+
+<use images_template/impolys-logo2.png>
+Package pdftex.def Info: images_template/impolys-logo2.png used on input line 1
+95.
+(pdftex.def)             Requested size: 19.27116pt x 17.70538pt.
+ [2 <./images_template/impolys-logo2.png>]
+File: images_template/impolys-logo2.png Graphic file (type png)
+ <use images_template/impolys-logo2.png>
+Package pdftex.def Info: images_template/impolys-logo2.png used on input line 1
+95.
+(pdftex.def)             Requested size: 19.27116pt x 17.70538pt.
+ [3]
+
+! Package titlesec Error: Entered in horizontal mode.
+
+See the titlesec package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \subsubsection{Subsubsection}
+                                    \label{sec:te}\blindtext
+The <format> argument cannot contain horizontal material
+such as text, \noindent, \makebox, etc.
+
+File: images_template/impolys-logo2.png Graphic file (type png)
+<use images_template/impolys-logo2.png>
+Package pdftex.def Info: images_template/impolys-logo2.png used on input line 2
+08.
+(pdftex.def)             Requested size: 19.27116pt x 17.70538pt.
+ [4] (./article_2.bbl)
+File: images_template/impolys-logo2.png Graphic file (type png)
+
+<use images_template/impolys-logo2.png>
+Package pdftex.def Info: images_template/impolys-logo2.png used on input line 2
+09.
+(pdftex.def)             Requested size: 19.27116pt x 17.70538pt.
+ [5] (./article_2.aux) ) 
 Here is how much of TeX's memory you used:
- 4583 strings out of 493013
- 60004 string characters out of 6139317
- 147760 words of memory out of 5000000
- 8059 multiletter control sequences out of 15000+600000
- 11242 words of font info for 44 fonts, out of 8000000 for 9000
+ 5896 strings out of 493013
+ 77707 string characters out of 6139317
+ 211629 words of memory out of 5000000
+ 9336 multiletter control sequences out of 15000+600000
+ 10404 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,26p,239b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on article_2.pdf (2 pages, 95359 bytes).
+ 39i,18n,43p,256b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb>
+Output written on article_2.pdf (5 pages, 187432 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
