@@ -1,11 +1,15 @@
-# IMPolyS template for Science Days (full article) -- directed at students in Strasbourg :metal:
-### [Contribute here](https://github.com/thatgeeman/egg-impolys.git)
-================================================================
-Based on MS Word template by Dr Vincent Le Houerou (ICS)
-LaTeX author(s): [thatgeeman](https://github.com/thatgeeman)
-Base class: `revtex4-1` (or `texlive-publishers` package)
-For windows/mac systems visit [APS](https://journals.aps.org/revtex)
-================================================================
+###### IMPolyS template for Science Days (full article) -- directed at students in Strasbourg :metal:
+
+[contribute here](https://github.com/thatgeeman/egg-impolys.git)
+
+based on MS Word template by Dr Vincent Le Houerou (ICS)
+
+laTeX author(s): [thatgeeman](https://github.com/thatgeeman)
+
+base class: `revtex4-1` (or `texlive-publishers` package)
+
+for windows/mac systems visit [APS](https://journals.aps.org/revtex)
+
 ```
 The MIT License (MIT)
 Copyright (c) 2017 Vincent Le Houerou; Geevarghese George
