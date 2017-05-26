@@ -2,9 +2,9 @@
 
 [contribute here](https://github.com/thatgeeman/egg-impolys.git)
 
-based on MS Word template by Dr Vincent Le Houerou (ICS)
+based on word template by [*Dr Vincent Le Houerou*](https://www-ics.u-strasbg.fr/spip.php?article229)
 
-laTeX author(s): [thatgeeman](https://github.com/thatgeeman)
+LaTeX author(s): [thatgeeman](https://github.com/thatgeeman)
 
 base class: `revtex4-1` (or `texlive-publishers` package)
 
