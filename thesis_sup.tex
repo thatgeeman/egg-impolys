@@ -1,0 +1,185 @@
+\documentclass[10pt,aps,pre,raggedfooter,twocolumn,twoside,longbibliography,superscriptaddress,floatfix]{revtex4-1}
+%\documentclass[10pt,aps,pra,twocolumn,twoside,showkeys,superscriptaddress]{revtex4-1} %showkeys
+% compile bib file always
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath} % flush quations left
+\usepackage{graphicx}
+\graphicspath{ {images_template/} }
+\usepackage{color}
+\usepackage[english]{babel}
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\usepackage{slantsc} % for bold italic
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{hyperref} % OR below for hiding red boxes
+% \usepackage[hidelinks]{hyperref} % For hyperlinks even for citation links
+\usepackage{gensymb} % some symbols
+ % For hyperlinks even for citation links
+\usepackage{nameref,zref-xr}
+\zxrsetup{toltxlabel}
+\zexternaldocument*{thesis} % tex file name usage \zref{name}
+\usepackage{tabularx} % fit table to margin
+\usepackage{array} % width of columns
+%\usepackage[format=plain,font=it]{caption} % italic captions can use in revtex4-1 with errors: use only if required
+%\usepackage{tablefootnote} % table footnote
+\renewcommand{\familydefault}{\rmdefault} % font. font size set in doc-class
+%\usepackage{showframe}
+\usepackage[margin=20mm,top=1in]{geometry} % can set margin
+\setlength{\columnsep}{10mm} % for column separation
+\usepackage{multirow} % for grouped tables
+\bibliographystyle{apsrev4-1} % define in preamble unlike in LaTeX
+%other bib styles :apsrmp4-1,aipauth4-1,aipnum4-1
+%\def\bibsection{\section*{\refname}} % remove the line below references, * avoids numbering
+\def\bibsection{\section{\refname}}
+
+% setting table rules
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% table rules end here
+
+\fancypagestyle{frontmatter}{%
+%\voffset = 1mm
+\headheight = 30pt
+\headsep = 25pt
+\fancyhead{} % clear all fields
+%\fancyfoot{}  % clear all fields remove if no footer
+\fancyhead[C]{\textit{International Master on Polymer Science -- Annual Journal\\
+Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(-285,-10){\line(1,0){505}} 
+\end{picture}
+} % OR
+%\renewcommand{\headrulewidth}{0.4pt}
+% logos for header
+\lhead{\begin{picture}(0,0) 
+\put(0,0){\includegraphics[scale=0.2]{uni-stra-logo}}
+\put(60,-7){\includegraphics[scale=0.11]{uni-frei-logo}}
+\put(460,0){\includegraphics[scale=0.2]{impolys-logo}}
+\put(-5,-10){\includegraphics[scale=0.07]{supple-mat.eps}}
+\end{picture}}
+
+%\renewcommand{\footrulewidth}{0.4pt} % no footer rule
+} % end of frontmatter
+
+\fancypagestyle{othermatter}{%
+\fancyhf{} % remove header footer
+\renewcommand{\headrulewidth}{-2pt} % remove lines as well
+\renewcommand{\footrulewidth}{-2pt}
+\headheight = 12pt
+\headsep = 12pt
+\fancyhead{} % clear all fields
+\fancyfoot{}  % clear all fields
+\fancyhead[CE]{
+\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(5,-9){\line(0,1){25}} 
+\end{picture}
+} % end of center een fancyhead
+\fancyhead[CO]{
+\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(-397,-9){\line(0,1){25}} 
+\end{picture}
+} % end of center odd fancyhead
+\fancyhead[LE,RO]{\thepage}
+% print page and logo as well
+% even cases
+\fancyhead[RE]{
+\begin{picture}(0,0) 
+\put(-45,-3){\includegraphics[scale=0.12]{impolys-logo2}}
+\put(-118,-8){\includegraphics[scale=0.07]{supple-mat.eps}}
+\end{picture}}
+% oddcases
+\fancyhead[LO]{
+\begin{picture}(0,0) 
+\put(18,-3){\includegraphics[scale=0.12]{impolys-logo2}}
+\put(55,-8){\includegraphics[scale=0.07]{supple-mat.eps}}
+\end{picture}}
+} % end of othermatter
+
+\pagestyle{othermatter} % default
+
+% optional footer 
+% \fancyfoot[LO,CE]{}
+% numbering could be arabic in SM
+% section format
+% hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame.
+% title space for sections
+% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}
+ \titleformat{\section}[hang]
+ {\raggedright\bfseries}
+{\arabic{section}.}{0.5em}{}
+ \titlespacing*{\section}{12pc}{1pc}{1pc}
+ % subsection format
+ \titleformat{\subsection}[hang]
+ {\raggedright\bfseries\itshape}
+{\arabic{section}.\arabic{subsection}.}{0.5em}{}
+ \titlespacing*{\subsection}{12pc}{1pc}{1pc}
+ %subsubsection format
+\titleformat{\subsubsection}[hang]
+ {\raggedright\bfseries\itshape}
+ {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}{0.5em}{}
+ \titlespacing*{\subsubsection}{12pc}{1pc}{1pc}
+
+ % fixing references to arabic (roman by default in revtex 4-1)
+ \makeatletter
+ \renewcommand*{\thesection}{\arabic{section}}
+ \renewcommand*{\thesubsection}{\thesection.\arabic{subsection}}
+ \renewcommand*{\p@subsection}{}
+ \renewcommand*{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+ \renewcommand*{\p@subsubsection}{}
+ \makeatother
+
+% italic captions and numbering 
+\makeatletter
+\renewcommand\@make@capt@title[2]{
+  \@ifx@empty\float@link{\@firstofone}{\expandafter\href\expandafter{\float@link}}
+   {\centering\textit{#1}}\@caption@fignum@sep\textit{#2}\quad
+}
+\makeatother
+% use aplhabets for figure 
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+
+
+\begin{document}
+
+\title{Computer simulation of polymer models in bulk and in confinement:\textit{supplementary material}}
+\author{Geevarghese \surname{George}$\dagger$}
+%\email[Corresponding author: ]{ggeorge@etu.unistra.fr} % email at bottom of page
+% \affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
+% 23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
+% not the smartest way to do this
+\author{Hendrik \surname{Meyer}\vspace*{3.5mm}}
+\affiliation{\textnormal{Theory and Simulation of Polymers Group (ETSP), Institut Charles Sadron, UPR22 CNRS,
+23 rue du Loess, 67034 Strasbourg Cedex 2, France \\ 
+\vspace{3.5mm}
+$\dagger$Corresponding author: ggeorge@etu.unistra.fr}}
+
+% affiliation after author name, auto checks for duplicate
+% \author{} % to add more authors
+% \noaffiliation % if no affiliation
+
+%\keywords{polymer simulation, LAMMPS, thin films} %use showkeys in document class if needed in output
+
+\maketitle
+\thispagestyle{frontmatter} % avoid page number in first page
+\section{\label{rdfintro}Pair Distribution Function}
+ It shown in Figure \ref{rdfall}. It is clear that these systems have the same melt distribution at discrete chain lengths.  Slight increase in the peaks is seen since the chains pack closely in the melt under confinement, but is considered to be insignificant. The same can be said about intra-chain pair distribution function shown in Figure \ref{rdfintra}. 
+ \begin{figure}
+ \includegraphics[scale=0.65]{plot_rdfall-bulk&confined-Nbigsmall.eps}
+ \caption{\label{rdfall}Interchain pair distribution function for $N=16, 64 \textrm{ and } 128$ shows identical behaviour and is independent of chain length or confinement}
+ \includegraphics[scale=0.65]{plot_rdfintra-ALLbulk.eps}
+ \caption{\label{rdfintra}Intra-chain pair distribution function with and without confinement for $N=64 \textrm{ and } 128$ shows no charachterestic difference}
+ \end{figure}
+
+
+
+%references
+% \bibliography{thesis.bib}
+\end{document}
