@@ -1,0 +1,246 @@
+% IMPolyS template for Science Days (full article template) -- for students in Strasbourg
+%
+% ================================================================
+% Based on MS Word template by Dr Vincent Le Houerou (ICS)
+%
+% LaTeX author(s): thatgeeman (https://github.com/thatgeeman/egg-impolys.git)
+% Linux systems: Revtex4-1 (compiled with texlive-publishers package)
+% For other systems https://journals.aps.org/revtex
+% ================================================================
+%
+% The MIT License (MIT)
+%
+% Copyright (c) 2017 Vincent Le Houerou; Geevarghese George
+%
+% Permission is hereby granted, free of charge, to any person obtaining a 
+% copy of this document and associated files (the "Software"), 
+% to deal in the Software without restriction, including without limitation 
+% the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+% and/or sell copies of the Software, and to permit persons to whom the Software
+% is furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included 
+% in all copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+% WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+% CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+% ================================================================
+
+\documentclass[10pt,aps,pre,raggedfooter,twocolumn,twoside,longbibliography,floatfix,superscriptaddress]{revtex4-1}
+%\documentclass[10pt,aps,pra,twocolumn,twoside,showkeys,superscriptaddress]{revtex4-1} %showkeys
+% compile bib file Alt+-
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath} % flush equations left
+\usepackage{graphicx}
+\graphicspath{ {images_template/} {images_thesis/} }
+\usepackage{color}
+\usepackage[english]{babel}
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\usepackage{slantsc} % for bold italic
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{gensymb} % some symbols
+\usepackage{tabularx} % fit table to margin
+\usepackage{array} % width of columns
+\usepackage{multirow} % for grouped tables
+
+% refer supplementary material in main material
+\usepackage{nameref,zref-xr}
+\zxrsetup{toltxlabel}
+\zexternaldocument*{template_thesis_sup.tex} % tex file name usage \zref{name}
+% end mod for supplementary
+
+%\usepackage[format=plain,font=it]{caption} % italic captions cant use in revtex4-1: use only if required
+
+%\usepackage{tablefootnote} % table footnote
+\renewcommand{\familydefault}{\rmdefault} % font. font size set in doc-class
+\usepackage[margin=20mm,top=0.75in]{geometry} % can set margin should be 20mm
+\usepackage[font=it,skip=5pt]{caption} % for caption spacing between figure in text in images
+\setlength{\columnsep}{10mm} % for column separation
+
+\bibliographystyle{apsrev4-1} % define in preamble unlike in LaTeX
+%other bib styles :apsrmp4-1,aipauth4-1,aipnum4-1
+%\def\bibsection{\section*{\refname}} % remove the line below references, *avoids numbering
+\def\bibsection{\section{\refname}}
+%\usepackage{showframe} % for dev
+
+% setting table rules
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% table rules end here
+
+% math bars, tensor
+\newcommand*\conj[1]{\bar{#1}}
+\newcommand*\mean[1]{\bar{#1}}
+\newcommand*{\rttensor}[1]{\bar{\bar{#1}}} %tensor
+% end math
+
+% blank footnote
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother % end of command def
+
+% front page design
+\fancypagestyle{frontmatter}{%
+%\voffset = 1mm
+\headheight = 30pt
+\headsep = 20pt
+\fancyhead{} % clear all fields
+%\fancyfoot{}  % clear all fields remove if no footer
+\fancyhead[C]{\textit{International Master on Polymer Science -- Annual Journal\\
+Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(-285,-10){\line(1,0){505}} 
+\end{picture}
+} % OR
+%\renewcommand{\headrulewidth}{0.4pt}
+% logos for header
+\lhead{\begin{picture}(0,0) 
+\put(0,0){\includegraphics[scale=0.25]{uni-stra-logo}}
+\put(60,-7){\includegraphics[scale=0.11]{uni-frei-logo}}
+\put(460,0){\includegraphics[scale=0.2]{impolys-logo}}
+\end{picture}}
+%\renewcommand{\footrulewidth}{0.4pt} % no footer rule
+} 
+% end of frontmatter
+
+% design for other pages
+\fancypagestyle{othermatter}{%
+\fancyhf{} % remove header footer
+\renewcommand{\headrulewidth}{-2pt} % remove lines as well
+\renewcommand{\footrulewidth}{-2pt}
+\headheight = 12pt
+\headsep = 12pt
+\fancyhead{} % clear all fields
+\fancyfoot{}  % clear all fields
+\fancyhead[CE]{
+\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(5,-6){\line(0,1){20}} 
+\end{picture}
+} % end of center even fancyhead
+\fancyhead[CO]{
+\textit{George \textrm{et al.}, International Master on Polymer Science -- Annual Journal Vol. 2 (2017)}
+\begin{picture}(0,0) % vertical line
+\put(-397,-6){\line(0,1){20}} 
+\end{picture}
+} % end of center odd fancyhead
+\fancyhead[LE,RO]{\thepage}
+% print page and logo as well
+% even cases
+\fancyhead[RE]{
+\begin{picture}(0,0) 
+\put(-45,-3){\includegraphics[scale=0.12]{impolys-logo2}}
+\end{picture}}
+% oddcases
+\fancyhead[LO]{
+\begin{picture}(0,0) 
+\put(18,-3){\includegraphics[scale=0.12]{impolys-logo2}}
+\end{picture}}
+} 
+% end of othermatter
+
+\pagestyle{othermatter} % default
+
+% optional footer 
+% \fancyfoot[LO,CE]{}
+
+% section format
+% hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame.
+% title space for sections
+% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}
+\titleformat{\section}[hang]
+{\raggedright\bfseries}
+{\arabic{section}.}{0.5em}{}
+\titlespacing*{\section}{12pc}{1pc}{1pc}
+% subsection format
+\titleformat{\subsection}[hang]
+{\raggedright\bfseries\itshape}
+{\arabic{section}.\arabic{subsection}.}{0.5em}{}
+\titlespacing*{\subsection}{12pc}{1pc}{1pc}
+%subsubsection format
+\titleformat{\subsubsection}[hang]
+{\raggedright\bfseries\itshape}
+{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}{0.5em}{}
+\titlespacing*{\subsubsection}{12pc}{1pc}{1pc}
+
+% fixing references to arabic (roman by default in revtex 4-1)
+\makeatletter
+\renewcommand*{\thesection}{\arabic{section}}
+\renewcommand*{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand*{\p@subsection}{}
+\renewcommand*{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\renewcommand*{\p@subsubsection}{}
+\makeatother
+
+% italic captions if not using captions Package
+% \makeatletter
+% \renewcommand\@make@capt@title[2]{
+%   \@ifx@empty\float@link{\@firstofone}{\expandafter\href\expandafter{\float@link}}
+%    {\centering\textit{#1}}\@caption@fignum@sep\textit{#2}\quad
+% }
+% \makeatother
+
+\begin{document}
+
+\title{Controlled living radical polymerization by atom transfer radical polymerization in the presence of transition metal complexes}
+\author{Jianhui \surname{Xia$\dagger$}}
+\author{Krzysztof \surname{Matyjaszewski}}\vspace*{3.5mm}
+\affiliation{\textnormal{Carnegie Mellon University, 5000 Forbes Ave, Pittsburgh, PA 15213, USA\\ 
+\vspace{3.5mm}
+$\dagger$Corresponding author: jxu@email.com}}
+% affiliation after author name, auto checks for duplicate
+% \author{} % to add more authors
+% \noaffiliation % if no affiliation
+%\keywords{polymer simulation, LAMMPS, thin films} % use showkeys in document class if needed in output
+
+\maketitle
+
+\setcounter{page}{1} % set pagenumber
+
+\section{Introduction} \label{sec:intro}
+\thispagestyle{frontmatter} % avoid page number in first page
+% \lettrine[nindent=0em,lines=3]{M} % fancy first letter, replace M
+\blindtext
+This is a sample citation\cite{bitsanis1990}.
+\blindtext
+This is a sample citation\cite{baschnagel1999mrssp}.
+
+\subsection{Subsection} \label{sec:tread}
+\blindtext
+\blindtext
+\begin{figure}[b] % or [tb]
+\centering
+ \includegraphics[scale=0.3]{linear.eps}
+ \includegraphics[scale=0.3]{lamellar.eps}
+ \caption{\label{config}Start configurations used at short and long chain lengths were different. For short chains linear chain placement would suffice, but at longer chains ($N\geq128$) we used lamellar start configurations.}
+\end{figure}
+\blindtext
+\blindtext
+
+\subsubsection{Subsubsection} \label{sec:content}
+\blindtext
+\blindtext
+This is a sample citation\cite{rudnick1986jp}.
+\blindtext
+
+\section{Conclusion}
+\blindtext
+\blindtext
+\blindtext
+
+\section{Acknowledgement}
+\blindtext
+
+\bibliography{template_thesis} % references bib file
+\end{document}

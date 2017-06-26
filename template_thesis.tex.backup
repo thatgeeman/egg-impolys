@@ -14,7 +14,7 @@
 % Copyright (c) 2017 Vincent Le Houerou; Geevarghese George
 %
 % Permission is hereby granted, free of charge, to any person obtaining a 
-% copy of this software and associated documentation files (the "Software"), 
+% copy of this document and associated files (the "Software"), 
 % to deal in the Software without restriction, including without limitation 
 % the rights to use, copy, modify, merge, publish, distribute, sublicense, 
 % and/or sell copies of the Software, and to permit persons to whom the Software
@@ -31,26 +31,71 @@
 % CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 % ================================================================
 
-\documentclass[aps,pra,twocolumn,twoside,superscriptaddress]{revtex4-1}
-\usepackage{amsmath,amssymb}
+\documentclass[10pt,aps,pre,raggedfooter,twocolumn,twoside,longbibliography,floatfix,superscriptaddress]{revtex4-1}
+%\documentclass[10pt,aps,pra,twocolumn,twoside,showkeys,superscriptaddress]{revtex4-1} %showkeys
+% compile bib file Alt+-
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath} % flush equations left
 \usepackage{graphicx}
-\graphicspath{ {images_template/} }
+\graphicspath{ {images_template} {images_thesis} }
 \usepackage{color}
 \usepackage[english]{babel}
 \usepackage{blindtext} % Package to generate dummy text throughout this template 
 \usepackage{titlesec}
 \usepackage{fancyhdr}
-%\usepackage{showframe}
-\usepackage[margin=20mm,top=1in]{geometry} % can set margin
+\usepackage{lettrine}
+\usepackage{slantsc} % for bold italic
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{gensymb} % some symbols
+\usepackage{tabularx} % fit table to margin
+\usepackage{array} % width of columns
+\usepackage{multirow} % for grouped tables
+
+% refer supplementary material in main material
+\usepackage{nameref,zref-xr}
+\zxrsetup{toltxlabel}
+\zexternaldocument*{template_thesis_sup.tex} % tex file name usage \zref{name}
+% end mod for supplementary
+
+%\usepackage[format=plain,font=it]{caption} % italic captions cant use in revtex4-1: use only if required
+
+%\usepackage{tablefootnote} % table footnote
+\renewcommand{\familydefault}{\rmdefault} % font. font size set in doc-class
+\usepackage[margin=20mm,top=0.75in]{geometry} % can set margin should be 20mm
+\usepackage[font=it,skip=5pt]{caption} % for caption spacing between figure in text in images
 \setlength{\columnsep}{10mm} % for column separation
-% \usepackage{hyperref} % For hyperlinks in the PDF
+
+\bibliographystyle{apsrev4-1} % define in preamble unlike in LaTeX
+%other bib styles :apsrmp4-1,aipauth4-1,aipnum4-1
+%\def\bibsection{\section*{\refname}} % remove the line below references, *avoids numbering
+\def\bibsection{\section{\refname}}
+%\usepackage{showframe} % for dev
+% setting table rules
+
+%math bars
+\newcommand*\conj[1]{\bar{#1}}
+\newcommand*\mean[1]{\bar{#1}}
+\newcommand*{\rttensor}[1]{\bar{\bar{#1}}} %tensor
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% table rules end here
+
+% blank footnote
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother % end of command def
 
 \fancypagestyle{frontmatter}{%
 %\voffset = 1mm
 \headheight = 30pt
-\headsep = 25pt
+\headsep = 20pt
 \fancyhead{} % clear all fields
-\fancyfoot{}  % clear all fields
+%\fancyfoot{}  % clear all fields remove if no footer
 \fancyhead[C]{\textit{International Master on Polymer Science -- Annual Journal\\
 Vol. 2 (2017)}
 \begin{picture}(0,0) % vertical line
@@ -60,7 +105,7 @@ Vol. 2 (2017)}
 %\renewcommand{\headrulewidth}{0.4pt}
 % logos for header
 \lhead{\begin{picture}(0,0) 
-\put(0,0){\includegraphics[scale=0.2]{uni-stra-logo}}
+\put(0,0){\includegraphics[scale=0.25]{uni-stra-logo}}
 \put(60,-7){\includegraphics[scale=0.11]{uni-frei-logo}}
 \put(460,0){\includegraphics[scale=0.2]{impolys-logo}}
 \end{picture}}
@@ -69,7 +114,7 @@ Vol. 2 (2017)}
 } % end of frontmatter
 
 \fancypagestyle{othermatter}{%
-\fancyhf{} % remove everything
+\fancyhf{} % remove header footer
 \renewcommand{\headrulewidth}{-2pt} % remove lines as well
 \renewcommand{\footrulewidth}{-2pt}
 \headheight = 12pt
@@ -107,29 +152,53 @@ Vol. 2 (2017)}
 % optional footer 
 % \fancyfoot[LO,CE]{}
 
+% section format
+% hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame.
+% title space for sections
+% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}
+\titleformat{\section}[hang]
+{\raggedright\bfseries}
+{\arabic{section}.}{0.5em}{}
+\titlespacing*{\section}{12pc}{1pc}{1pc}
+% subsection format
+\titleformat{\subsection}[hang]
+{\raggedright\bfseries\itshape}
+{\arabic{section}.\arabic{subsection}.}{0.5em}{}
+\titlespacing*{\subsection}{12pc}{1pc}{1pc}
+%subsubsection format
+\titleformat{\subsubsection}[hang]
+{\raggedright\bfseries\itshape}
+{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}{0.5em}{}
+\titlespacing*{\subsubsection}{12pc}{1pc}{1pc}
 
-% move section headings to left and decimal numbering
-\titleformat{\section}{\raggedright\bfseries}{\arabic{section}.}{1em}{}
-\titleformat{\subsection}{\raggedright\bfseries\textit}{\arabic{section}.\arabic{subsection}.}{1em}{}
-\titleformat{\subsubsection}{\raggedright\bfseries\textit}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}{1em}{}
-
-% fix references
+% fixing references to arabic (roman by default in revtex 4-1)
 \makeatletter
-\renewcommand{\p@subsection}{}
-\renewcommand{\p@subsubsection}{}
+\renewcommand*{\thesection}{\arabic{section}}
+\renewcommand*{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand*{\p@subsection}{}
+\renewcommand*{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\renewcommand*{\p@subsubsection}{}
 \makeatother
+
+% italic captions if not using captions Package
+% \makeatletter
+% \renewcommand\@make@capt@title[2]{
+%   \@ifx@empty\float@link{\@firstofone}{\expandafter\href\expandafter{\float@link}}
+%    {\centering\textit{#1}}\@caption@fignum@sep\textit{#2}\quad
+% }
+% \makeatother
 
 \begin{document}
 
-\title{Computer simulation of polymer models in bulk and in confinement}
+\title{Computer simulation of polymer melts in bulk and under confinement}
 \author{Geevarghese \surname{George}$\dagger$}
 %\email[Corresponding author: ]{ggeorge@etu.unistra.fr} % email at bottom of page
 % \affiliation{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS), \
 % 23 rue du Loess, 67034 STRASBOURG Cedex 2, France}
 % not the smartest way to do this
 \author{Hendrik \surname{Meyer}\vspace*{3.5mm}}
-\affiliation{\textnormal{Theory and Simulation of Polymers (ETSP), Institut Charles Sadron, ICS (UPR22-CNRS),
-23 rue du Loess, 67034 STRASBOURG Cedex 2, France \\ 
+\affiliation{\textnormal{Theory and Simulation of Polymers Group (ETSP), Institut Charles Sadron, UPR22 CNRS,
+23 rue du Loess, 67034 Strasbourg Cedex 2, France \\ 
 \vspace{3.5mm}
 $\dagger$Corresponding author: ggeorge@etu.unistra.fr}}
 
@@ -137,72 +206,73 @@ $\dagger$Corresponding author: ggeorge@etu.unistra.fr}}
 % \author{} % to add more authors
 % \noaffiliation % if no affiliation
 
-% abstract: if needed uncomment
-% to break down abstract into relevant points use item : not necessary (Phys. Rev. C requires this format)
-% ===============
-% \begin{abstract}
-%
-% \noindent Previous study of polymer melt using molecular dynamics simulation showed standard results.
-% The study suggested that confinement does not alter the static properties significantly for the chosen 
-% chain length and the dynamic quantities is what is being modified. In this study, layered analysis 
-% approach was utilized, which enabled us to look closer into the interface between melt and the wall.
-% *more from conclusion*
-%
-% OR
-%
-% \begin{description}
-%  \item[Background]
-%  \item[Purpose]
-%  \item[Method]
-%  \item[Results]
-%  \item[Conclusion]
-% \end{description}
-% \end{abstract}
-% ===============
-
 %\keywords{polymer simulation, LAMMPS, thin films} %use showkeys in document class if needed in output
 
 \maketitle
-
 %\tableofcontents % not needed 
+% \begin{quotation}
+%  Some quotation maybe?
+% \end{quotation}
+% \begin{acknowledgement}
+%  Some acknowledgement
+% \end{acknowledgement}
+
+\setcounter{page}{1} % set pagenumber
 
 \section{Introduction} \label{sec:intro}
 \thispagestyle{frontmatter} % avoid page number in first page
+% \lettrine[nindent=0em,lines=3]{M} % fancy first letter, replace M
 \blindtext
 \blindtext
-\blindtext\blindtext
 \blindtext
 \blindtext
 \blindtext
+\blindtext
+\blindtext
+
 \subsection{Subsection} \label{sec:tead}
-\blindtext\blindtext
 \blindtext
 \blindtext
-\blindtext\blindtext
+\begin{figure}[tb]
+\centering
+ \includegraphics[scale=0.3]{linear.eps}
+ \includegraphics[scale=0.3]{lamellar.eps}
+ \caption{\label{config}Start configurations used at short and long chain lengths were different. For short chains linear chain placement would suffice, but at longer chains ($N\geq128$) we used lamellar start configurations.}
+\end{figure}
 \blindtext
 \blindtext
 \blindtext
 \blindtext
-\subsubsection{Subsubsection} \label{sec:teww}\blindtext
-\blindtext
-\blindtext\blindtext
-\blindtext
-\blindtext\blindtext
-\blindtext
-\blindtext\blindtext
 \blindtext
 \blindtext
+\blindtext
+\blindtext
+
+\subsubsection{Subsubsection} \label{sec:teww}
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+
 \subsubsection{Subsubsection} \label{sec:te}\blindtext
 \blindtext
-\blindtext\blindtext
 \blindtext
-\blindtext\blindtext
 \blindtext
-\blindtext\blindtext
 \blindtext
-\blindtext\blindtext
 \blindtext
-\blindtext\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+\blindtext
 \blindtext
 \blindtext
 

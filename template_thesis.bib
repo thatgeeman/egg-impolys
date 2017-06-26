@@ -1,0 +1,436 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% polymers
+
+@Book{RuCo2003book,
+  author =	 {M. Rubinstein and R. H. Colby},
+  title = 	 {Polymer Physics},
+  publisher = 	 {Oxford Univ. Press},
+  address   = {Oxford},
+  year = 	 2003
+}
+
+@Book{DoEd1986book,
+  author  = {M. Doi and S. F. Edwards},
+  title   = {Theory of Polymer Dynamics},
+  publisher = {Oxford Univ. Press},
+  address   = {Oxford},
+  year    = 1986
+}
+
+@Book{Flo1969book,
+  author = {P. J. Flory},
+  title  = {Statistical Mechanics of Chain Molecules},
+  publisher = {Wiley/Hanser},
+  year = {1969},
+}
+
+@Book{Vol1963book,
+  author =       {Volkenstein, M. V.},
+  title =        {Configurational Statistics of Polymer Chains},
+  publisher =    {Interscience Wiley},
+  year =         1963,
+  note =         {chapter 5}
+}
+
+@Book{DeG1979book,
+  author  = {P. G. DeGennes},
+  title   = {Scaling Concepts in Polymer Physics},
+  publisher = {Cornell Univ. Press},
+  address  = {Ithaca, NY},
+  year  = 1979
+}
+
+@Book{SuMa1994book,
+  author  = {U. W. Suter and W. L. Mattice},
+  title   = {Conformational Theory of Large Molecules},
+  publisher = {Wiley Interscience},
+  address = {New York},
+  year = 1994,
+  annote = {The rotational Isomeric State Model in Macromolecular Systems}
+}
+
+@Book{Wun73-76-80,
+  author =       {B. Wunderlich},
+  title =        {Macromolecular Physics},
+  publisher =    {Academic},
+  year =         {1973,1976,1980},
+  note =         {3 Volumes},
+  annote =       {1. Crystal Structure, Morphology, Defects 2. Crystal Nucleation, Growth, Annealing 3. Crystal Melting}
+}
+
+@Book{Str1997book,
+  author =	 {G. Strobl},
+  title = 	 {The Physics of Polymers},
+  publisher = 	 {Springer},
+  year = 	 1997,
+  address =	 {Berlin},
+  edition =	 {2nd},
+  annote =	 {chapter 4 crystallization, 3rd edition 2007}
+}
+
+
+
+@Book{HiBe1996book,
+  author =	 {J. S. Higgins and H. C. Beno\^\i t},
+  title = 	 {Polymers and Neurtron Scattering},
+  publisher = 	 {Oxford University Press},
+  year = 	 1996,
+  address =	 {Oxford}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% liquids and simulation
+
+@Book{HaMD1986book,
+  author =	 {J. P. Hansen and I. R. McDonald},
+  title = 	 {Theory of Simple Liquids},
+  publisher = 	 {Academic Press},
+  year = 	 1986,
+  address =	 {London},
+  annote = {3rd edition 2006}
+}
+
+@Book{BoYi1980book,
+  author  = {J. P. Boon and S. Yip},
+  title   = {Molecular Hydrodynamics},
+  publisher = {McGraw-Hill/Dover},
+  year    = {1980}
+}
+
+@Book{BaZo1994book,
+  author = {U. Balucani and M. Zoppi},
+  title  = {Dynamics of the Liquid State},
+  publisher = {Clarendon press},
+  address = {Oxford},
+  year = 1994
+}
+
+@Book{AlTi1987book,
+   author    = {Allen, M.P. and Tildesley, D.J.},
+   title     = {{Computer Simulation of Liquids}},
+   publisher = {Oxford Science},
+   address   = {Oxford},
+   year      = {1987}
+}
+
+@Book{FrSm2002book,
+  author    = {Daan Frenkel and Berend Smit},
+  title     = {Unterstanding Molecular Simulation},
+  publisher = {Academic Press},
+  address   = {San Diego},
+  year      = 2002,
+  edition   = {2nd}
+}
+
+@Book{NumRec,
+  author = {W. H. Press and S. A. Teukolsky and W. T. Vetterling and B. P. Flannery},
+  title = {Numerical Recipes in {C: T}he Art of Scientific Computing},
+  publisher = {Cambridge Univ. Press},
+  year  = 1992
+}
+
+@Book{Don2001book,
+  author =       {Donth, E.},
+  title =        {The Glass Transition},
+  publisher =    {Springer},
+  year =         2001,
+  address =      {Berlin--Heidelberg}
+}
+
+@Book{Sch1999book,
+  author = 	 {Lothar Sch\"afer},
+  title = 	 {Excluded Volume Effects in Polymer Solutions},
+  publisher = 	 {Springer},
+  year = 	 1999,
+  address =	 {Berlin}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% general ref
+@article{plimpton1995,
+abstract = {Three parallel algorithms for classical molecular dynamics are presented. The first assigns each processor a fixed subset of atoms; the second assigns each a fixed subset of inter-atomic forces to compute; the third assigns each a fixed spatial region. The algorithms are suitable for molecular dynamics models which can be difficult to parallelize efficiently—those with short-range forces where the neighbors of each atom change rapidly. They can be implemented on any distributed-memory parallel machine which allows for message-passing of data between independently executing processors. The algorithms are tested on a standard Lennard-Jones benchmark problem for system sizes ranging from 500 to 100,000,000 atoms on several parallel supercomputers--the nCUBE 2, Intel iPSC/860 and Paragon, and Cray T3D. Comparing the results to the fastest reported vectorized Cray Y-MP and C90 algorithm shows that the current generation of parallel machines is competitive with conventional vector supercomputers even for small problems. For large problems, the spatial algorithm achieves parallel efficiencies of 90{\%} and a 1840-node Intel Paragon performs up to 165 faster than a single Cray C9O processor. Trade-offs between the three algorithms and guidelines for adapting them to more complex molecular dynamics simulations are also discussed.},
+author = {Plimpton, Steve},
+journal = {Journal of Computational Physics},
+doi = {10.1006/jcph.1995.1039},
+file = {:media/data1/mendeley/Unknown. Unknown. Unknown(6).pdf:pdf},
+isbn = {0021-9991},
+issn = {00219991},
+number = {1},
+pages = {1--19},
+title = {{Fast Parallel Algorithms for Short-Range Molecular Dynamics}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S002199918571039X},
+volume = {117},
+year = {1995}
+}
+
+@Article{MeKrCaWiBa2007epjst,
+  author =       {H. Meyer and T. Kreer and A. Cavallo and J. P. Wittmer and J. Baschnagel},
+  title =        {On the Dynamics and Disentanglement in Thin and Two-Dimensional Polymer Films},
+  journal =      {Eur. Phys. J.-Spec. Top.},
+  year =         2007,
+  volume =       {141},
+  pages =        {167-172},
+  note =         {cond-mat/0609127},
+  annote =       {accelerated dynamics and PPA N=256}
+}
+@Article{WiEA2011review,
+  author  = {J.P.~Wittmer and A.~Cavallo and H.~Xu and J.~Zabel and P.~Poli\'nska and N.~Schulmann
+             and H.~Meyer and J.~Farago and A.~Johner and S.P.~Obukhov and J.~Baschnagel},
+  title   = {Scale-free static and dynamical correlations in melts of monodisperse and
+             Flory distributed homopolymers},
+  journal = {J. Stat. Phys.},
+  volume  = {145},
+  year    = {2011},
+  pages   = {1017--1126}
+}
+
+@misc{lammps1,
+author = {{Sandia National Laboratories}},
+title = {{LAMMPS Molecular Dynamics Simulator}},
+url = {http://lammps.sandia.gov/}
+}
+
+
+@article{bitsanis1990,
+author = {Bitsanis, I. and Hadziioannou, G.},
+doi = {10.1063/1.457840},
+file = {:home/hexxus/Downloads/bitsanis1990.pdf:pdf},
+issn = {0021-9606},
+journal = {The Journal of Chemical Physics},
+number = {6},
+pages = {3827--3847},
+title = {{Molecular dynamics simulations of the structure and dynamics of confined polymer melts}},
+url = {http://aip.scitation.org/doi/10.1063/1.457840},
+volume = {92},
+year = {1990}
+}
+
+@book{wschool2004,
+abstract = {A coarse-grained simulation model eliminates microscopic degrees of freedom and represents a polymer by a simplified structure. A priori, two classes of coarse-grained models may be distinguished: those which are designed for a specific polymer and reflect the underlying atomistic details to some extent, and those which retain only the most basic features of a polymer chain (chain connectivity, short-range excluded-volume interactions, etc.). In this review we mainly focus on the second class of generic polymer models, while the first class of specific coarse-grained models is only touched upon briefly.},
+address = {J{\"{u}}lich},
+archivePrefix = {arXiv},
+arxivId = {cond-mat/0407717},
+author = {Baschnagel, J. and Wittmer, J. P. and Meyer, H.},
+booktitle = {Computational Soft Matter},
+eprint = {0407717},
+file = {:home/hexxus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/CE3I3GJD-BaschnagelReview2004.pdf:pdf},
+isbn = {3000126414},
+keywords = {internship},
+mendeley-tags = {internship},
+pages = {57},
+primaryClass = {cond-mat},
+publisher = {NIC},
+series = {NIC series},
+shorttitle = {Computational soft matter},
+title = {{Monte Carlo Simulation of Polymers: Coarse-Grained Models}},
+volume = {23},
+year = {2004}
+}
+
+@article{haber2000,
+abstract = {Random walks have been used to describe a wide variety of systems ranging from cell colonies to polymers. Sixty-five years ago, Kuhn [Kuhn, W. (1934) Kolloid-Z. 68, 2-11] made the prediction, backed later by computer simulations, that the overall shape of a random-walk polymer is aspherical, yet no experimental work has directly tested Kuhn's general idea and subsequent computer simulations. By using fluorescence microscopy, we monitored the conformation of individual, long, random-walk polymers (fluorescently labeled DNA molecules) at equilibrium. We found that a polymer most frequently adopts highly extended, nonfractal structures with a strongly anisotropic shape. The ensemble-average ratio of the lengths of the long and short axes of the best-fit ellipse of the polymer was much larger than unity.},
+author = {Haber, C and Ruiz, S a and Wirtz, D},
+doi = {10.1073/pnas.190320097},
+file = {:home/hexxus/Downloads/PNAS-2000-Haber-10792-5.pdf:pdf},
+isbn = {0027-8424 (Print)$\backslash$r0027-8424 (Linking)},
+issn = {0027-8424},
+journal = {Proceedings of the National Academy of Sciences of the United States of America},
+number = {20},
+pages = {10792--10795},
+pmid = {10984514},
+title = {{Shape anisotropy of a single random-walk polymer.}},
+volume = {97},
+year = {2000}
+}
+
+
+@article{baschnagel1999mrssp,
+abstract = {This paper reports results of a Monte Carlo simulation for a simplified lattice model of a supercooled polymer film. The film geometry is realized by two opposite hard walls. The distance between the walls is varied. The chains exhibit a strong tendency to orient parallel to the walls and are flattened when being very close to them. This deviation of the polymer structure with respect to the bulk is accompanied by an acceleration of local density},
+author = {Baschnagel, J and Binder, K.},
+doi = {10.1557/PROC-543-157},
+file = {:home/hexxus/Downloads/baschnagel1998.pdf:pdf},
+journal = {Mat. Res. Soc. Symp. Proc.},
+pages = {157--162},
+title = {{On the glass transition in polymer films: recent monte carlo results}},
+url = {https://www.researchgate.net/publication/270532238{\_}On{\_}the{\_}Glass{\_}Transition{\_}in{\_}Polymer{\_}Films{\_}Recent{\_}Monte{\_}Carlo{\_}Results},
+volume = {543},
+year = {1999}
+}
+
+@article{rudnick1986jp,
+abstract = {The asphericity, (A), of a random walk is defined and calculated for non-self-avoiding walks. The definition of (A) generalises to self-avoiding walks, percolating clusters and other fractal objects and thus provides a generalised quantitative measure of the departure from spherical symmetry of the gross shape of these objects.},
+author = {Rudnick, J. and Gaspari, G.},
+doi = {10.1088/0305-4470/19/4/004},
+isbn = {0305-4470},
+issn = {0305-4470},
+journal = {Journal of Physics A: Mathematical and General},
+number = {4},
+pages = {L191},
+title = {{The aspherity of random walks}},
+url = {http://iopscience.iop.org/0305-4470/19/4/004},
+volume = {19},
+year = {1986}
+}
+
+@article{baschnagel2005,
+abstract = {We survey results of computer simulations for the structure and dynamics of supercooled polymer melts and films. Our survey is mainly. concerned with features of a coarse grained polymer model-a bead-spring model-in the temperature regime above the critical glass temperature T(c) of the ideal mode-coupling theory (MCT). We divide our discussion into two parts: a part devoted to bulk properties and a part dealing with thin films. The discussion of the bulk properties focuses on two aspects: a comparison of the simulation results with MCT and an analysis of dynamic heterogeneities. We explain in detail how the analyses are performed and what, results may be obtained, and we critically assess their strengths and weaknesses.. In discussing the application of MCT we also present first results of a quantitative comparison which does not rely on fits, but exploits static input from the simulation to predict the relaxation dynamics. The second part of this review is devoted to extensions of the simulations from the bulk to thin films. We explore in detail the influence of the boundary condition, imposed by smooth or rough walls, on the structure and dynamics of the polymer melt. Geometric confinement is found to shift the glass transition temperature T(g) (or T(c) in our case) relative to the bulk. We compare our and other simulation results for the T(g) shift with experimental data, briefly survey some theoretical ideas for explaining these shifts and discuss related simulation work on the glass transition of confined liquids. Finally, we also present some technical details of how to perform fits to MCT and give a brief introduction to another approach to the glass transition based on the potential energy landscape of a liquid.},
+author = {Baschnagel, J and Varnik, F},
+doi = {10.1088/0953-8984/17/32/R02},
+file = {:media/data1/mendeley/Baschnagel, Varnik. 2005. Journal of Physics Condensed Matter.pdf:pdf},
+isbn = {0953-8984},
+issn = {0953-8984},
+journal = {Journal of Physics: Condensed Matter},
+mendeley-groups = {Zotero - simulation/internship,Zotero - Zotero Library},
+month = {aug},
+number = {32},
+pages = {R851--R953},
+title = {{Computer simulations of supercooled polymer melts in the bulk and in confined geometry}},
+url = {http://stacks.iop.org/0953-8984/17/i=32/a=R02?key=crossref.52bf0e73ad080293cfdc9d5d97e6969b},
+volume = {17},
+year = {2005}
+}
+
+
+@article{paul2004,
+abstract = {Computer simulations of polymer models have contributed strongly to our understanding of the glass transition in polymer melts. The ability of the simulation to provide information on experimentally not directly accessible quantities like the detailed spatial arrangement of the particles allows for stringent tests of theoretical concepts about the glass transition and provides additional insight for the interpretation of experimental data. Comparing coarse-grained simulations of a bead-spring model and chemically realistic simulations of 1,4-polybutadiene the importance of dihedral barriers for the glass transition phenomenon can be elucidated. ?? 2004 Elsevier Ltd. All rights reserved.},
+author = {Paul, Wolfgang},
+doi = {10.1016/j.polymer.2004.01.079},
+file = {:media/data1/mendeley/Paul. 2004. Polymer.pdf:pdf},
+isbn = {4961313925441},
+issn = {00323861},
+journal = {Polymer},
+keywords = {Glass transition,MD simulation,Polymer melt},
+language = {en},
+mendeley-groups = {Zotero - simulation/internship,Zotero - Zotero Library},
+month = {may},
+number = {11},
+pages = {3901--3905},
+title = {{Molecular dynamics simulations of the glass transition in polymer melts}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S003238610400285X},
+volume = {45},
+year = {2004}
+}
+
+
+
+@thesis{gg2017,
+abstract = {Molecular dynamics simulation was utilized to study the effect of confinement in polymer melts of varying bond lengths. Bulk systems with and without angular potentials were studied with fixed chain length of 16. Reducing the bond length relative to the bead diameter leads to stiffer chains without introducing an explicit angular potential. Another set of systems with confinement was also studied at the same chain lengths. Investigations on angular histogram, diffusion coefficient, gyration distribution, mean square displacement, intra-chain orientation correlation function, radial distribution function, single chain structure factor and density distribution were carried out in this work. The study showed the effect of adding an angular potential to the chain and its effect on static and dynamic quantities. The study suggested that confinement does not alter the static properties significantly for the chosen chain length and the dynamic quantities is what is being modified.},
+author = {George, Geevarghese and Meyer, Hendrik},
+file = {:media/data1/im-polys/M2 - internship/internship-files-report/report{\_}M2S1.pdf:pdf},
+school = {University of Strasbourg},
+title = {{Molecular dynamics simulation of polymer melt in bulk and confined systems (Report)}},
+year = {2017}
+}
+
+@article{kuhn1934,
+author = {Kuhn, W.},
+doi = {10.1007/BF01451681},
+file = {:home/hexxus/Downloads/art{\%}3A10.1007{\%}2FBF01451681.pdf:pdf},
+journal = {Kolloid-Zeitschrift},
+number = {1},
+pages = {2--11},
+title = {{{\"{U}}ber die Gestalt fadenf{\"{o}}rmiger Molek{\"{u}}le in L{\"{o}}sungen}},
+url = {https://link.springer.com/article/10.1007{\%}2FBF01451681},
+volume = {269},
+year = {1934}
+}
+
+@article{solc1971,
+author = {{\v{S}}olc, Karel},
+doi = {10.1063/1.1675527},
+file = {:home/hexxus/Downloads/solc1971.pdf:pdf},
+journal = {Journal of Chemical Physics},
+number = {1},
+pages = {335--344},
+title = {{Shape of a Random Flight Chain}},
+url = {http://aip.scitation.org/doi/10.1063/1.1675527},
+volume = {55},
+year = {1971}
+}
+
+@article{kremer1990,
+abstract = {We present an extensive molecular‐dynamics simulation for a bead spring model of a melt of linear polymers. The number of monomersN covers the range from N=5 to N=400. Since the entanglement length N e is found to be approximately 35, our chains cover the crossover from the nonentangled to the entangled regime. The Rouse model provides an excellent description for short chains N{\textless}N e , while the dynamics of the long chains can be described by the reptation model. By mapping the model chains onto chemical species we give estimates of the times and distances of onset of the slowing down in motion due to reptation. Comparison to neutron spin‐echo data confirm our mapping procedure, resolving a discrepancy between various experiments. By considering the primitive chain we are able to directly visualize the confinement to a tube. Analyzing the Rouse mode relaxation allows us to exclude the generalized Rouse models, while the original reptation prediction gives a good description of the data.},
+author = {Kremer, Kurt and Grest, Gary S.},
+doi = {10.1063/1.458541},
+file = {:media/data1/mendeley/Kremer, Grest. 1990. The Journal of Chemical Physics.pdf:pdf},
+isbn = {0021-9606},
+issn = {0021-9606},
+journal = {The Journal of Chemical Physics},
+language = {en},
+mendeley-groups = {Zotero - simulation/internship,Zotero - Zotero Library},
+month = {apr},
+number = {8},
+pages = {5057--5086},
+shorttitle = {Dynamics of entangled linear polymer melts},
+title = {{Dynamics of entangled linear polymer melts:  A molecular‐dynamics simulation}},
+url = {http://aip.scitation.org/doi/10.1063/1.458541},
+volume = {92},
+year = {1990}
+}
+
+
+@article{meyer2008epje,
+author = {Meyer, H. and Wittmer, J. P. and Kreer, T. and Beckrich, P. and Johner, A. and Farago, J. and Baschnagel, J.},
+doi = {10.1140/epje/i2007-10250-0},
+file = {:home/hexxus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WF33C4ER-meyer2008.pdf:pdf},
+issn = {1292-8941, 1292-895X},
+journal = {The European Physical Journal E},
+language = {en},
+month = {may},
+number = {1-2},
+pages = {25--33},
+shorttitle = {Static Rouse modes and related quantities},
+title = {{Static Rouse modes and related quantities: Corrections to chain ideality in polymer melts}},
+url = {http://www.springerlink.com/index/10.1140/epje/i2007-10250-0},
+volume = {26},
+year = {2008}
+}
+
+
+@Article{HOOMD,
+  autor = {Joshua A. Anderson and Chris D. Lorenz  and Alex Travesset},
+  title = {General Purpose Molecular Dynamics Fully Implemented on Graphics Processing Units},
+  journal = {J. Computational Physics},
+  volume = 227,
+  year = 2008,
+  pages = {5342-5359},
+  url={http://codeblue.umich.edu/hoomd-blue/}
+}
+
+@Article{Pli1995jcp,
+  author = {S. J. Plimpton},
+  journal = {J. Computational. Phys.},
+  volume = 117,
+  year = 1995,
+  pages = {1}
+}
+
+@article{HoKo1992epl,
+  author={P. J. Hoogerbrugge and J. M. V. A. Koelman},
+  title={Simulating Microscopic Hydrodynamic Phenomena with Dissipative Particle Dynamics},
+  journal={EPL (Europhysics Letters)},
+  volume={19},
+  number={3},
+  pages={155},
+  ppurl={http://stacks.iop.org/0295-5075/19/i=3/a=001},
+  year={1992},
+  abstract={We present a novel method for simulating hydrodynamic phenomena. This particle-based method combines features from molecular dynamics and lattice-gas automata. It is shown theoretically as w
+ell as in simulations that a quantitative description of isothermal Navier-Stokes flow is obtained with relatively few particles. Computationally, the method is much faster than molecular dynamics, and
+the at same time it is much more flexible than lattice-gas automata schemes.}
+}
+
+@article{EsWa1995epl,
+  author={P. Espanol and P. Warren},
+  title={Statistical Mechanics of Dissipative Particle Dynamics},
+  journal={EPL (Europhysics Letters)},
+  volume={30},
+  number={4},
+  pages={191},
+  ppurl={http://stacks.iop.org/0295-5075/30/i=4/a=001},
+  year={1995},
+  abstract={The stochastic differential equations corresponding to the updating algorithm of Dissipative Particle Dynamics (DPD), and the corresponding Fokker-Planck equation are derived. It is shown th
+at a slight modification to the algorithm is required before the Gibbs distribution is recovered as the stationary solution to the Fokker-Planck equation. The temperature of the system is then directly
+related to the noise amplitude by means of a fluctuation-dissipation theorem. However, the correspondingly modified, discrete DPD algorithm is only found to obey these predictions if the length of the t
+ime step is sufficiently reduced. This indicates the importance of time discretisation in DPD.}
+}

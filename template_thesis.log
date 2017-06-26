@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.23)  8 JUN 2017 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.23)  26 JUN 2017 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis_sup.tex
-(./thesis_sup.tex
+**template_thesis.tex
+(./template_thesis.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/revtex/revtex4-1.cls
@@ -938,45 +938,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count141
-) (./zref-xr.sty
-Package: zref-xr 2016/05/21 v2.26 Module xr for zref (HO)
-(/usr/share/texmf-dist/tex/latex/oberdiek/zref-base.sty
-Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
-Package zref Info: New property list: main on input line 759.
-Package zref Info: New property: default on input line 760.
-Package zref Info: New property: page on input line 761.
-)
-Package zref Info: New property: url on input line 55.
-Package zref Info: New property: urluse on input line 56.
-Package zref Info: New property: externaldocument on input line 57.
-\ZREF@xr@URL=\count142
-)
-Package zref Info: New property: anchor on input line 24.
-Package zref Info: New property: title on input line 24.
-Package zref-xr Info: Label import from `thesis.aux' on input line 25.
-
-
-Package zref-xr Warning: Zref label `' is already in use
-(zref-xr)                in file `thesis.aux'.
-
-
-Package zref-xr Warning: Zref label `' is already in use
-(zref-xr)                in file `thesis.aux'.
-
-
-Package zref-xr Warning: Zref label `' is already in use
-(zref-xr)                in file `thesis.aux'.
-
-Package zref-xr Info: Statistics for `thesis.aux':
-(zref-xr)             20 LaTeX label(s) found,
-(zref-xr)             3 duplicated zref label(s) ignored.
 (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 
@@ -993,70 +954,121 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@old@col=\dimen143
 \TX@target=\dimen144
 \TX@delta=\dimen145
-\TX@cols=\count143
+\TX@cols=\count141
 \TX@ftn=\toks27
-)
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count144
-\Gm@cntv=\count145
-\c@Gm@tempcnt=\count146
-\Gm@bindingoffset=\dimen146
-\Gm@wd@mp=\dimen147
-\Gm@odd@mp=\dimen148
-\Gm@even@mp=\dimen149
-\Gm@layoutwidth=\dimen150
-\Gm@layoutheight=\dimen151
-\Gm@layouthoffset=\dimen152
-\Gm@layoutvoffset=\dimen153
-\Gm@dimlist=\toks28
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip63
-\multirow@cntb=\count147
+\multirow@cntb=\count142
 \multirow@dima=\skip64
-\bigstrutjot=\dimen154
+\bigstrutjot=\dimen146
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count143
+) (./zref-xr.sty
+Package: zref-xr 2016/05/21 v2.26 Module xr for zref (HO)
+(/usr/share/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+Package zref Info: New property: url on input line 55.
+Package zref Info: New property: urluse on input line 56.
+Package zref Info: New property: externaldocument on input line 57.
+\ZREF@xr@URL=\count144
+)
+Package zref Info: New property: anchor on input line 59.
+Package zref Info: New property: title on input line 59.
+
+
+Package zref-xr Warning: File `template_thesis_sup.tex.aux' not found or empty,
+
+(zref-xr)                labels not imported on input line 61.
+
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count145
+\Gm@cntv=\count146
+\c@Gm@tempcnt=\count147
+\Gm@bindingoffset=\dimen147
+\Gm@wd@mp=\dimen148
+\Gm@odd@mp=\dimen149
+\Gm@even@mp=\dimen150
+\Gm@layoutwidth=\dimen151
+\Gm@layoutheight=\dimen152
+\Gm@layouthoffset=\dimen153
+\Gm@layoutvoffset=\dimen154
+\Gm@dimlist=\toks28
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen155
+\captionmargin@=\dimen156
+\captionwidth=\dimen157
+\caption@tempdima=\dimen158
+\caption@indent=\dimen159
+\caption@parindent=\dimen160
+\caption@hangindent=\dimen161
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\par \vskip \abovecapti
+onskip \begingroup \small \rmfamily \sbox \@tempboxa {\let \\\heading@cr \@make
+@capt@title {#1}{#2}}\@ifdim {\wd \@tempboxa >\hsize }{\begingroup \samepage \f
+lushing \let \footnote \@footnotemark@gobble \@make@capt@title {#1}{#2}\par \en
+dgroup }{\global \@minipagefalse \hb@xt@ \hsize {\hfil \unhbox \@tempboxa \hfil
+ }}\endgroup \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count148
+Package caption Info: hyperref package is loaded.
 )
 Class revtex4-1 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 150.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 150
+lass! (Proceeding with fingers crossed.) on input line 194.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 194
 .
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 150.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 150.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 150.
- (./thesis_sup.aux
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 194.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 194.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 194.
+ (./template_thesis.aux)
+\openout1 = `template_thesis.aux'.
 
-LaTeX Warning: Label `FirstPage' multiply defined.
-
-
-LaTeX Warning: Label `LastPage' multiply defined.
-
-)
-\openout1 = `thesis_sup.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 150.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 194.
 
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 150.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 194.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1064,16 +1076,16 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count148
-\scratchdimen=\dimen155
+\scratchcounter=\count149
+\scratchdimen=\dimen162
 \scratchbox=\box46
-\nofMPsegments=\count149
-\nofMParguments=\count150
+\nofMPsegments=\count150
+\nofMParguments=\count151
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count151
-\MPscratchDim=\dimen156
-\MPnumerator=\count152
-\makeMPintoPDFobject=\count153
+\MPscratchCnt=\count152
+\MPscratchDim=\dimen163
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1093,26 +1105,26 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring OFF on input line 150.
-LaTeX Info: Redefining \ref on input line 150.
-LaTeX Info: Redefining \pageref on input line 150.
-LaTeX Info: Redefining \nameref on input line 150.
+Package hyperref Info: Link coloring OFF on input line 194.
+LaTeX Info: Redefining \ref on input line 194.
+LaTeX Info: Redefining \pageref on input line 194.
+LaTeX Info: Redefining \nameref on input line 194.
 
-(./thesis_sup.out) (./thesis_sup.out)
+(./template_thesis.out) (./template_thesis.out)
 \@outlinefile=\write4
-\openout4 = `thesis_sup.out'.
+\openout4 = `template_thesis.out'.
 
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 150.
-Package gensymb Info: Math companion symbols declared on input line 150.
-LaTeX Info: Redefining \degree on input line 150.
-LaTeX Info: Redefining \celsius on input line 150.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 194.
+Package gensymb Info: Math companion symbols declared on input line 194.
+LaTeX Info: Redefining \degree on input line 194.
+LaTeX Info: Redefining \celsius on input line 194.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 150.
-LaTeX Info: Redefining \ohm on input line 150.
-Package gensymb Info: Using \textohm for \ohm on input line 150.
-Package gensymb Info: Using \textmu for \micro on input line 150.
+erthousand on input line 194.
+LaTeX Info: Redefining \ohm on input line 194.
+Package gensymb Info: Using \textohm for \ohm on input line 194.
+Package gensymb Info: Using \textmu for \micro on input line 194.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1123,14 +1135,14 @@ Package gensymb Info: Using \textmu for \micro on input line 150.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
 * h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(72.26999pt, 665.7945pt, 56.9055pt)
+* v-part:(T,H,B)=(54.2025pt, 683.86198pt, 56.9055pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=500.484pt
-* \textheight=665.7945pt
+* \textheight=683.86198pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-41.0pt
+* \topmargin=-59.06749pt
 * \headheight=12.0pt
 * \headsep=12.0pt
 * \topskip=10.0pt
@@ -1148,190 +1160,159 @@ Package gensymb Info: Using \textmu for \micro on input line 150.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 150.
-\openout3 = `thesis_supNotes.bib'.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 194.
+\openout3 = `template_thesisNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 170.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 207.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 170
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 207
 .
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 170
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 207
 .
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 170.
+(Font)              <10> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 170.
+(Font)              <7> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 170.
-LaTeX Font Info:    Try loading font information for U+msa on input line 170.
+(Font)              <5> on input line 207.
+LaTeX Font Info:    Try loading font information for U+msa on input line 207.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 170.
+LaTeX Font Info:    Try loading font information for U+msb on input line 207.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 170.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 207.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 170.
+(Font)              <9> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 170.
-Package epstopdf Info: Source file: <ljdata/plot_rdfall-bulk&confined-Nbigsmall
-.eps>
-(epstopdf)                    date: 2017-06-07 11:54:04
-(epstopdf)                    size: 146205 bytes
-(epstopdf)             Output file: <ljdata/plot_rdfall-bulk&confined-Nbigsmall
--eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 11:54:13
-(epstopdf)                    size: 189679 bytes
-(epstopdf)             Command: <repstopdf --outfile=ljdata/plot_rdfall-bulk&co
-nfined-Nbigsmall-eps-converted-to.pdf ljdata/plot_rdfall-bulk&confined-Nbigsmal
-l.eps>
-(epstopdf)             \includegraphics on input line 175.
+(Font)              <6> on input line 207.
+Package epstopdf Info: Source file: <images_thesis/linear.eps>
+(epstopdf)                    date: 2017-06-26 11:36:07
+(epstopdf)                    size: 3170 bytes
+(epstopdf)             Output file: <images_thesis/linear-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-06-26 12:01:05
+(epstopdf)                    size: 3766 bytes
+(epstopdf)             Command: <repstopdf --outfile=images_thesis/linear-eps-c
+onverted-to.pdf images_thesis/linear.eps>
+(epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
-<ljdata/plot_rdfall-bulk&confined-Nbigsmall-eps-converted-to.pdf, id=14, 361.35
-pt x 252.945pt>
-File: ljdata/plot_rdfall-bulk&confined-Nbigsmall-eps-converted-to.pdf Graphic f
-ile (type pdf)
+<images_thesis/linear-eps-converted-to.pdf, id=34, 381.425pt x 363.3575pt>
+File: images_thesis/linear-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ljdata/plot_rdfall-bulk&confined-Nbigsmall-eps-converted-to.pdf>
-Package pdftex.def Info: ljdata/plot_rdfall-bulk&confined-Nbigsmall-eps-convert
-ed-to.pdf used on input line 175.
-(pdftex.def)             Requested size: 234.87471pt x 164.4123pt.
-Package epstopdf Info: Source file: <ljdata/plot_rdfintra-ALLbulk.eps>
-(epstopdf)                    date: 2017-06-07 13:08:22
-(epstopdf)                    size: 41928 bytes
-(epstopdf)             Output file: <ljdata/plot_rdfintra-ALLbulk-eps-converted
--to.pdf>
-(epstopdf)                    date: 2017-06-07 13:10:16
-(epstopdf)                    size: 33757 bytes
-(epstopdf)             Command: <repstopdf --outfile=ljdata/plot_rdfintra-ALLbu
-lk-eps-converted-to.pdf ljdata/plot_rdfintra-ALLbulk.eps>
-(epstopdf)             \includegraphics on input line 177.
+<use images_thesis/linear-eps-converted-to.pdf>
+Package pdftex.def Info: images_thesis/linear-eps-converted-to.pdf used on inpu
+t line 224.
+(pdftex.def)             Requested size: 114.42838pt x 109.00809pt.
+Package epstopdf Info: Source file: <images_thesis/lamellar.eps>
+(epstopdf)                    date: 2017-06-26 11:36:07
+(epstopdf)                    size: 4527 bytes
+(epstopdf)             Output file: <images_thesis/lamellar-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2017-06-26 12:01:05
+(epstopdf)                    size: 4146 bytes
+(epstopdf)             Command: <repstopdf --outfile=images_thesis/lamellar-eps
+-converted-to.pdf images_thesis/lamellar.eps>
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
-<ljdata/plot_rdfintra-ALLbulk-eps-converted-to.pdf, id=15, 361.35pt x 252.945pt
->
-File: ljdata/plot_rdfintra-ALLbulk-eps-converted-to.pdf Graphic file (type pdf)
+<images_thesis/lamellar-eps-converted-to.pdf, id=35, 381.425pt x 363.3575pt>
+File: images_thesis/lamellar-eps-converted-to.pdf Graphic file (type pdf)
 
- <use ljdata/plot_rdfintra-ALLbulk-eps-converted-to.pdf>
-Package pdftex.def Info: ljdata/plot_rdfintra-ALLbulk-eps-converted-to.pdf used
- on input line 177.
-(pdftex.def)             Requested size: 234.87471pt x 164.4123pt.
- (./thesis_sup.bbl)
-<uni-stra-logo.png, id=16, 222.8325pt x 100.375pt>
-File: uni-stra-logo.png Graphic file (type png)
- <use uni-stra-logo.png>
-Package pdftex.def Info: uni-stra-logo.png used on input line 185.
-(pdftex.def)             Requested size: 44.5657pt x 20.07463pt.
+<use images_thesis/lamellar-eps-converted-to.pdf>
+Package pdftex.def Info: images_thesis/lamellar-eps-converted-to.pdf used on in
+put line 225.
+(pdftex.def)             Requested size: 114.42838pt x 109.00809pt.
 
-<uni-frei-logo.png, id=18, 351.3125pt x 351.3125pt>
-File: uni-frei-logo.png Graphic file (type png)
- <use uni-frei-logo.png>
-Package pdftex.def Info: uni-frei-logo.png used on input line 185.
+<images_template/uni-stra-logo.png, id=37, 222.8325pt x 100.375pt>
+File: images_template/uni-stra-logo.png Graphic file (type png)
+
+<use images_template/uni-stra-logo.png>
+Package pdftex.def Info: images_template/uni-stra-logo.png used on input line 2
+36.
+(pdftex.def)             Requested size: 55.70798pt x 25.09367pt.
+
+<images_template/uni-frei-logo.png, id=39, 351.3125pt x 351.3125pt>
+File: images_template/uni-frei-logo.png Graphic file (type png)
+
+<use images_template/uni-frei-logo.png>
+Package pdftex.def Info: images_template/uni-frei-logo.png used on input line 2
+36.
 (pdftex.def)             Requested size: 38.64449pt x 38.64449pt.
 
-<impolys-logo.png, id=19, 160.6pt x 147.55125pt>
-File: impolys-logo.png Graphic file (type png)
- <use impolys-logo.png>
-Package pdftex.def Info: impolys-logo.png used on input line 185.
+<images_template/impolys-logo.png, id=40, 160.6pt x 147.55125pt>
+File: images_template/impolys-logo.png Graphic file (type png)
+
+<use images_template/impolys-logo.png>
+Package pdftex.def Info: images_template/impolys-logo.png used on input line 23
+6.
 (pdftex.def)             Requested size: 32.11942pt x 29.50972pt.
-Package epstopdf Info: Source file: <supple-mat.eps>
-(epstopdf)                    date: 2017-06-07 14:37:06
-(epstopdf)                    size: 14636 bytes
-(epstopdf)             Output file: <supple-mat-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 14:37:21
-(epstopdf)                    size: 4278 bytes
-(epstopdf)             Command: <repstopdf --outfile=supple-mat-eps-converted-t
-o.pdf supple-mat.eps>
-(epstopdf)             \includegraphics on input line 185.
-Package epstopdf Info: Output file is already uptodate.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images_template/uni-s
+tra-logo.png> <./images_template/uni-frei-logo.png> <./images_template/impolys-
+logo.png> <./images_thesis/linear-eps-converted-to.pdf> <./images_thesis/lamell
+ar-eps-converted-to.pdf>]
+(./template_thesis.bbl)
+<images_template/impolys-logo2.png, id=77, 160.6pt x 147.55125pt>
+File: images_template/impolys-logo2.png Graphic file (type png)
 
-<supple-mat-eps-converted-to.pdf, id=20, 817.0525pt x 82.3075pt>
-File: supple-mat-eps-converted-to.pdf Graphic file (type pdf)
-
-<use supple-mat-eps-converted-to.pdf>
-Package pdftex.def Info: supple-mat-eps-converted-to.pdf used on input line 185
-.
-(pdftex.def)             Requested size: 57.19951pt x 5.7621pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./uni-stra-logo.png> <.
-/uni-frei-logo.png> <./impolys-logo.png> <./supple-mat-eps-converted-to.pdf>]
-<impolys-logo2.png, id=43, 160.6pt x 147.55125pt>
-File: impolys-logo2.png Graphic file (type png)
- <use impolys-logo2.png>
-Package pdftex.def Info: impolys-logo2.png used on input line 185.
+<use images_template/impolys-logo2.png>
+Package pdftex.def Info: images_template/impolys-logo2.png used on input line 2
+46.
 (pdftex.def)             Requested size: 19.27116pt x 17.70538pt.
-Package epstopdf Info: Source file: <supple-mat.eps>
-(epstopdf)                    date: 2017-06-07 14:37:06
-(epstopdf)                    size: 14636 bytes
-(epstopdf)             Output file: <supple-mat-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 14:37:21
-(epstopdf)                    size: 4278 bytes
-(epstopdf)             Command: <repstopdf --outfile=supple-mat-eps-converted-t
-o.pdf supple-mat.eps>
-(epstopdf)             \includegraphics on input line 185.
-Package epstopdf Info: Output file is already uptodate.
-File: supple-mat-eps-converted-to.pdf Graphic file (type pdf)
-
-<use supple-mat-eps-converted-to.pdf>
-Package pdftex.def Info: supple-mat-eps-converted-to.pdf used on input line 185
-.
-(pdftex.def)             Requested size: 57.19951pt x 5.7621pt.
- [2 <./impolys-logo2.png> <./ljdata/plot_rdfall-bulk&confined-Nbigsmall-eps-con
-verted-to.pdf> <./ljdata/plot_rdfintra-ALLbulk-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
- (./thesis_sup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
-Package rerunfilecheck Info: File `thesis_sup.out' has not changed.
-(rerunfilecheck)             Checksum: 4F0F0672A195DD726E078FB222748058;194.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+ [2 <./images_template/impolys-logo2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+ (./template_thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package rerunfilecheck Info: File `template_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: AA03A65E93A840097A5AECEECE0EF24A;520.
  ) 
 Here is how much of TeX's memory you used:
- 10806 strings out of 493013
- 150446 string characters out of 6139317
- 275674 words of memory out of 5000000
- 14127 multiletter control sequences out of 15000+600000
- 55705 words of font info for 53 fonts, out of 8000000 for 9000
+ 11838 strings out of 493013
+ 169672 string characters out of 6139317
+ 314252 words of memory out of 5000000
+ 15145 multiletter control sequences out of 15000+600000
+ 50205 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,18n,43p,395b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dis
-t/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mat
+ 36i,18n,43p,347b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fo
+nts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mat
 hsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/tex
 mf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr
-/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/
-type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb>
-</usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fo
-nts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr
-i9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texm
-f-dist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on thesis_sup.pdf (2 pages, 486831 bytes).
+lic/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr
+/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts
+/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pf
+b></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/
+fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr
+i10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on template_thesis.pdf (2 pages, 288807 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 52 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 14 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
