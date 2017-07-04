@@ -1,4 +1,4 @@
-#### IMPolyS template for Science Days (full article) -- directed at students in Strasbourg :metal:
+## IMPolyS template for Science Days (full article) -- directed at students in Strasbourg :metal:
 
 [contribute here](https://github.com/thatgeeman/egg-impolys.git)
 
