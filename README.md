@@ -8,6 +8,7 @@ This template is based on a word template by [Dr Vincent Le Houerou](https://www
 * Item 1
 * Item 2
 
+## License
 ```
 ===============================================================================
 The MIT License (MIT)
