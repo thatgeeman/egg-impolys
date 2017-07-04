@@ -1,14 +1,16 @@
 ## IMPolyS template for Science Days (full article) -- directed at students in Strasbourg :metal:
 
-[contribute here](https://github.com/thatgeeman/egg-impolys.git)
+If you prefer modifying the existing tool, please feel free to fork [this](https://github.com/thatgeeman/egg-impolys.git) repository.
 
-based on word template by [*Dr Vincent Le Houerou*](https://www-ics.u-strasbg.fr/spip.php?article229)
+This template is based on a word template by [Dr Vincent Le Houerou](https://www-ics.u-strasbg.fr/spip.php?article229). All important features of the word template has been incorporated into this TeX version. Please request more features by editing [README.md](https://github.com/thatgeeman/egg-impolys/blob/master/README.md).
 
 LaTeX author(s): [thatgeeman](https://github.com/thatgeeman)
+Base class: `revtex4-1` (or `texlive-publishers` package)
+For windows/mac systems visit [APS](https://journals.aps.org/revtex)
 
-base class: `revtex4-1` (or `texlive-publishers` package)
-
-for windows/mac systems visit [APS](https://journals.aps.org/revtex)
+## Feature request(s):
+* Item 1
+* Item 2
 
 ```
 ===============================================================================
