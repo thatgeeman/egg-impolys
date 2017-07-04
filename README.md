@@ -34,4 +34,4 @@ IN THE SOFTWARE.
 ===============================================================================
 ```
 ## Misc
-LaTeX author(s): [thatgeeman](https://github.com/thatgeeman); Base class: `revtex4-1` (or `texlive-publishers` package); For windows/mac systems visit [APS](https://journals.aps.org/revtex); Learn more about [IM-Polys](http://www.physique-ingenierie.unistra.fr/im-polys/)
+LaTeX author(s): [thatgeeman](https://github.com/thatgeeman); Base class: `revtex4-1` (or `texlive-publishers` package); For windows/mac systems visit [APS](https://journals.aps.org/revtex); Learn more about [IM-PolyS](http://www.physique-ingenierie.unistra.fr/im-polys/)
